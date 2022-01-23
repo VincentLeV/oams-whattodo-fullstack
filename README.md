@@ -33,8 +33,10 @@ For simplicity's sake, there is no user feature in the app.
 
 ## Demo
 
-<a href="https://oams-whattodo.netlify.app" target="_blank">
-    <p align="center">https://oams-whattodo.netlify.app</p>
+<a href="https://oams-whattodo-mern.netlify.app" target="_blank">
+    <p align="center">https://oams-whattodo-mern.netlify.app</p>
 </a>
 
-![](https://user-images.githubusercontent.com/49280437/150673038-94e13007-6653-438b-a7c5-85dae2c18b49.gif)
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/49280437/150673038-94e13007-6653-438b-a7c5-85dae2c18b49.gif" alt="4" />
+</p>
