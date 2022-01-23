@@ -1,10 +1,10 @@
 # WhatToDo
 
 ## Introduction
-This is a very basic CRUD todo-list fullstack application. It's a part of my "One App Multi-stacks" series. This version is created with React (frontend), Node.js & Express.js (backend), MongoDB (database).
+This is a very basic CRUD todo-list fullstack application. It's a part of my "One App Multi-stacks" series. This version is created with ReactJS (frontend), NodeJS & ExpressJS (backend), MongoDB (database).
 
 ## Features
-For simplicity's sake, there is no feature for users in the app.
+For simplicity's sake, there is no user feature in the app.
 
 - Create/Read/Update/Delete todos (priority, deadline, description)
 - Create/Read/Update/Delete projects
@@ -14,6 +14,9 @@ For simplicity's sake, there is no feature for users in the app.
 1. ReactJS
 2. MaterialUI
 3. Cypress
+4. ExpressJS
+5. MongoDB
+6. Docker
 
 ## Images
 <p align="center">
@@ -30,6 +33,8 @@ For simplicity's sake, there is no feature for users in the app.
 
 ## Demo
 
-https://oams-whattodo.netlify.app
+<a href="https://oams-whattodo.netlify.app" target="_blank">
+    <p align="center">https://oams-whattodo.netlify.app</p>
+</a>
 
 ![](https://user-images.githubusercontent.com/49280437/150673038-94e13007-6653-438b-a7c5-85dae2c18b49.gif)
