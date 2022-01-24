@@ -4,7 +4,7 @@ import {
     Box
 } from "@mui/material"
 
-import ProjectTodoContainer from "../ProjectTodoContainer"
+import ProjectTodoContainer from "./ProjectTodoContainer"
 
 export default function ProjectContent({ project, todo }) {
     return (

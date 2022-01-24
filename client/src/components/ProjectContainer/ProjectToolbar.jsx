@@ -8,7 +8,7 @@ import AddIcon from "@mui/icons-material/Add"
 import DeleteSweepRoundedIcon from "@mui/icons-material/DeleteSweepRounded"
 import EditRoundedIcon from "@mui/icons-material/EditRounded"
 
-import ProjectTodoAddModal from "../ProjectTodoAddModal"
+import AddProjectTodoModal from "../AddProjectTodoModal"
 import EditProjectModal from "../EditProjectModal"
 import Axios from "../../services/axios"
 import { useToast } from "../../contexts/ToastContext"
@@ -114,7 +114,7 @@ export default function ProjectToolbar({ project }) {
                 </Stack>
             </Stack>
             
-            <ProjectTodoAddModal
+            <AddProjectTodoModal
                 project={project}
                 isModalOpen={isModalOpen}
                 setIsModalOpen={setIsModalOpen}

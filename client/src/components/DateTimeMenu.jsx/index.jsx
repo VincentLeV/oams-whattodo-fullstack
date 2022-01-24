@@ -3,7 +3,7 @@ import {
     Menu
 } from "@mui/material"
 
-import DTPicker from "../DTPicker/index"
+import DTPicker from "../DTPicker"
 
 export default function DateTimeMenu({ anchorEl, setAnchorEl, deadline, setDeadline }) {
     const handleClose = (i, reason) => {

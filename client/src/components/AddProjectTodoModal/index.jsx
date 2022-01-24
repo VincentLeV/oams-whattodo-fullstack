@@ -4,7 +4,7 @@ import {
     Modal
 } from "@mui/material"
 
-import AddProjectTodoForm from "../AddProjectTodoForm"
+import AddProjectTodoForm from "./AddProjectTodoForm"
 
 const style = {
     position: "absolute",
