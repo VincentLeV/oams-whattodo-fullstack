@@ -24,7 +24,10 @@ function App() {
                     <ToastProvider>
                         <Appbar />
 
-                        <Container maxWidth="sm" sx={{ position: "relative", height: "100vh", padding: "9vh 5px 20px 5px" }}>
+                        <Container 
+                            maxWidth="sm" 
+                            sx={{ position: "relative", height: "100vh", padding: { xs: "9vh 5px 20px 5px", lg: "12vh 5px 20px 5px" } }}
+                        >
                             <TabMenu />
 
                             <AddDial 
