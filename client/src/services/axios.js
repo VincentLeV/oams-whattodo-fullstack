@@ -1,5 +1,5 @@
 import axios from "axios"
-const baseUrl = "https://oams-whattodo-rexpmongo-api.herokuapp.com"
+const baseUrl = "https://oams-whattodo-mern-api.herokuapp.com"
 // const baseUrl = "http://localhost:5000"
 
 const getTodos = async () => {
