@@ -1,4 +1,4 @@
-# WhatToDo
+# WhatToDo (MERN)
 
 ## Introduction
 This is a very basic CRUD todo-list fullstack application. It's a part of my "One App Multi-stacks" series. This version is created with ReactJS (frontend), NodeJS & ExpressJS (backend), MongoDB (database).
