@@ -37,11 +37,11 @@ export default function EditProjectTodoForm({ todo, project, setIsModalOpen, set
             setIsModalOpen(false)
             setAnchor(null)
 
-            setToast({ show: true, msg: "Successfully edited todo", severity: "success" })
+            setToast({ show: true, msg: "Successfully edited project todo", severity: "success" })
         } catch (err) {
             setToast({ 
                 show: true, 
-                msg: err.response?.data?.message?.includes("allowed length") ? "Error: description length is longer than 20" : err.response?.data?.message, 
+                msg: err.response?.data?.message, 
                 severity: "error" 
             })
         }

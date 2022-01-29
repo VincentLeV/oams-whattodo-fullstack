@@ -42,7 +42,7 @@ export default function EditTodoForm({ todo, setIsModalOpen, setAnchor }) {
             const sorted = sortTodos(newTodos, "priority")
             setTodos(sorted)
 
-            setToast({ show: true, msg: "Successfully edited new todo", severity: "success" })
+            setToast({ show: true, msg: "Successfully edited todo", severity: "success" })
         } catch (err) {
             setToast({ 
                 show: true, 
