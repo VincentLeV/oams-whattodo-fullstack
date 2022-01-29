@@ -26,7 +26,11 @@ function App() {
 
                         <Container 
                             maxWidth="sm" 
-                            sx={{ position: "relative", height: "85vh", padding: { xs: "9vh 5px 20px 5px", lg: "12vh 5px 20px 5px" } }}
+                            sx={{ 
+                                position: "relative", 
+                                height: { xs: "85vh", md: "100vh" }, 
+                                padding: { xs: "9vh 5px 20px 5px", lg: "12vh 5px 20px 5px" } 
+                            }}
                         >
                             <TabMenu />
 
