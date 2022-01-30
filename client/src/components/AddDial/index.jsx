@@ -31,9 +31,10 @@ export default function AddDial({ isModalOpen, setIsModalOpen, setModalType }) {
         <Box 
             id="add-dial" 
             sx={{ 
-                position: { xs: "fixed", md: "absolute" }, 
-                bottom: { xs: "5vh", md: "3vh" }, 
-                right: { xs: "3vw", md: "-3vw" } 
+                position: "fixed", 
+                bottom: { xs: "8vh", md: "8vh" }, 
+                right: { xs: "4vw", md: "25vw" },
+                zIndex: 1500
             }}
         >
             <SpeedDial
