@@ -45,8 +45,6 @@ For simplicity's sake, there is no user feature in the app.
 
 :loudspeaker: For all of the step below: make sure that you're in the project's directory :loudspeaker:
 
-<br />
-
 ### Using Terminal and VSCode
 
 1. Run the Backend
@@ -59,22 +57,17 @@ For simplicity's sake, there is no user feature in the app.
         cd client
         yarn run start
 
-<p align="center">Checkout the app at <a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a></p>
-
-<br />
+<p align="center">Check the app out at <a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a></p>
 
 ### Using Docker
 
     ./deploy.ps1
 
-<p align="center">Checkout the app at <a href="http://localhost:8080/" target="_blank">http://localhost:8080/</a></p>
-<br />
+<p align="center">Check the app out at <a href="http://localhost:8080/" target="_blank">http://localhost:8080/</a></p>
 
 ### E2E Testing
 
     yarn run cypress
-
-<br />
 
 ## UI Examples
 <p align="center">
@@ -88,8 +81,6 @@ For simplicity's sake, there is no user feature in the app.
 <p align="center">
     <img src="https://user-images.githubusercontent.com/49280437/151970745-dcfffc15-cf84-4ae4-9710-50abedfa8b7c.jpg" alt="3" width="500px" />
 </p>
-
-<br />
 
 ## Demo
 <a href="https://oams-whattodo-mern.netlify.app" target="_blank">
