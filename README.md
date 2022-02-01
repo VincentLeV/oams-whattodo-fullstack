@@ -59,7 +59,7 @@ For simplicity's sake, there is no user feature in the app.
         cd client
         yarn run start
 
-<p align="center">Checkout the app at http://localhost:3000/</p>
+<p align="center">Checkout the app at <a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a></p>
 
 <br />
 
@@ -67,7 +67,7 @@ For simplicity's sake, there is no user feature in the app.
 
     ./deploy.ps1
 
-<p align="center">Checkout the app at http://localhost:8080/</p>
+<p align="center">Checkout the app at <a href="http://localhost:8080/" target="_blank">http://localhost:8080/</a></p>
 <br />
 
 ### E2E Testing
