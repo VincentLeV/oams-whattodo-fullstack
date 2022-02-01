@@ -20,15 +20,15 @@ For simplicity's sake, there is no user feature in the app.
 
 ## Images
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/49280437/150652075-351d8d84-bc84-4f1f-b524-4ec997a421e2.jpg" alt="1" width="500px" />
+    <img src="https://user-images.githubusercontent.com/49280437/151970734-96c7f0da-ba46-4844-8506-1fd5e2f6f211.jpg" alt="1" width="500px" />
 </p>
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/49280437/150652080-3a67049d-7a52-4fac-b01e-f70f31b67313.jpg" alt="2" width="500px" />
+    <img src="https://user-images.githubusercontent.com/49280437/151970745-dcfffc15-cf84-4ae4-9710-50abedfa8b7c.jpg" alt="2" width="500px" />
 </p>
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/49280437/150652083-4f2d7445-e61e-4a10-923c-8c3c90fced05.jpg" alt="3" width="500px" />
+    <img src="https://user-images.githubusercontent.com/49280437/151970745-dcfffc15-cf84-4ae4-9710-50abedfa8b7c.jpg" alt="3" width="500px" />
 </p>
 
 ## Demo
@@ -38,5 +38,5 @@ For simplicity's sake, there is no user feature in the app.
 </a>
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/49280437/151957705-f63a5b03-7d50-4964-9696-9501dffb41d4.gif" alt="gif" />
+    <img src="https://user-images.githubusercontent.com/49280437/151970803-9734962c-e20c-420c-b123-156fb9bbca67.gif" alt="gif" />
 </p>
