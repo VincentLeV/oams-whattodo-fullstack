@@ -1,6 +1,6 @@
 services:
   app:
-    image: whattodo-frontend-dev
+    image: whattodo-mern-frontend-dev
     build:
       context: . 
       dockerfile: dev.Dockerfile
@@ -8,11 +8,11 @@ services:
       - ./:/usr/src/app
     ports:
       - 3001:3000
-    container_name: whatttodo-frontend-standalone
+    container_name: wtdmern-front-standalone
   nginx:
     image: nginx:1.20.1
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
     ports:
       - 8080:80
-    container_name: whattodo-reverse-proxy-front-dev
+    container_name: wtdmern-front-dev-reverse-proxy

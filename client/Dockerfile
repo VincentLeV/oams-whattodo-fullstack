@@ -10,7 +10,7 @@ ENV REACT_APP_BACKEND_URL=/api/
 
 RUN yarn run build
 
-RUN yarn install -g serve
+RUN npm install -g serve
 
 USER node
 

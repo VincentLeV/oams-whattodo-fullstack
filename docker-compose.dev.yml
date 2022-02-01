@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   server:
-    image: whattodo-backend-dev
+    image: whattodo-mern-backend-dev
     build:
       context: ./server
       dockerfile: ./dev.Dockerfile
@@ -10,12 +10,12 @@ services:
       - ./server:/usr/src/app
     ports:
       - 5000:3000
-    container_name: whattodo-backend-dev
+    container_name: wtdmern-backend-dev
     environment:
       MONGO_URL: 'mongodb://the_username:the_password@mongo:27017/the_database'
 
   client:
-    image: whattodo-frontend-dev
+    image: whattodo-mern-frontend-dev
     build:
       context: ./client
       dockerfile: ./dev.Dockerfile
@@ -23,7 +23,7 @@ services:
       - ./client:/usr/src/app
     ports:
       - 3000:3000
-    container_name: whattodo-frontend-dev
+    container_name: wtdmern-frontend-dev
     environment:
       REACT_APP_BACKEND_URL: "/api/"
 
@@ -33,7 +33,7 @@ services:
       - ./dev.nginx.conf:/etc/nginx/nginx.conf:ro
     ports:
       - 8080:80
-    container_name: whattodo-reverse-proxy-dev
+    container_name: wtdmern-reverse-proxy-dev
 
   mongo:
     image: mongo
@@ -41,7 +41,7 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
       MONGO_INITDB_DATABASE: the_database
-    container_name: whattodo-mongo-dev
+    container_name: wtdmern-mongo-dev
     volumes: 
       - ./whattodo-backend/mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
       - ./whattodo-backend/mongo_data:/data/db
