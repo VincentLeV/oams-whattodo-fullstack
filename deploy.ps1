@@ -1,0 +1,1 @@
+docker-compose -p whattodo-mern-app -f docker-compose.yml up -d
