@@ -1,0 +1,8 @@
+*.ps1 linguist-detectable=true
+*.ps1 linguist-language=powershell
+
+*.yml linguist-detectable=true
+*.yml linguist-language=dockerfile
+
+*dockerfile linguist-detectable=true
+*dockerfile linguist-language=dockerfile
