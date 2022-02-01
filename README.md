@@ -38,5 +38,5 @@ For simplicity's sake, there is no user feature in the app.
 </a>
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/49280437/150673038-94e13007-6653-438b-a7c5-85dae2c18b49.gif" alt="4" />
+    <img src="https://user-images.githubusercontent.com/49280437/151957705-f63a5b03-7d50-4964-9696-9501dffb41d4.gif" alt="gif" />
 </p>
