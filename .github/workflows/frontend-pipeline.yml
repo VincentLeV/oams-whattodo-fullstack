@@ -55,15 +55,17 @@ jobs:
     needs: Lint_Build_Test
     runs-on: ubuntu-18.04
     if: github.event_name == 'push' && !contains(github.event.head_commit.message, '#skip')
+    
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '14.x'
+
+      - name: Install Packages
+        working-directory: client
+        run: yarn install
 
       - name: Build
         working-directory: client
-        run: yarn run build
+        run: yarn build
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2
