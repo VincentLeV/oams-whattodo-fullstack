@@ -58,10 +58,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Build
+        working-directory: client
+        run: yarn run build
+
       - name: Deploy to Netlify
+        working-directory: client
         uses: nwtgck/actions-netlify@v1.2
         with:
-          publish-dir: './build'
+          publish-dir: 'client/build'
           production-branch: main
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
