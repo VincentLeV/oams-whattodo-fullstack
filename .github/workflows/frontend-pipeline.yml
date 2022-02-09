@@ -1,0 +1,62 @@
+name: Frontend Deployment pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize]
+
+jobs:
+  Lint_Build_Test:
+    runs-on: ubuntu-18.04
+    environment: production
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+
+      - name: Install Packages
+        working-directory: client
+        run: yarn install
+
+      - name: Linting
+        working-directory: client
+        run: yarn run lint
+
+      - name: Build
+        working-directory: client
+        run: yarn run build
+
+      - name: Run API In The Background
+        working-directory: server
+        run: npm run start:test
+        env:
+          PORT: 8000
+
+      - name: End to End Testing
+        working-directory: client
+        uses: cypress-io/github-action@v2
+        run: |
+          yarn install
+          yarn build
+          yarn start
+          yarn test:e2e
+        env:
+          REACT_APP_API_BASE_URL: http://localhost:8000
+
+  versioning_deployment:
+    needs: Lint_Build_Test
+    runs-on: ubuntu-18.04
+    if: github.event_name == 'push' && !contains(github.event.head_commit.message, '#skip')
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Deploy to Netlify
+        - uses: jsmrcaga/action-netlify-deploy@v1.1.0
+          with:
+            NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+            NETLIFY_SITE_ID: ${{ secrets.7b9e85c2-f681-4e34-9d44-08312640a0e5 }}
+            NETLIFY_DEPLOY_TO_PROD: true
