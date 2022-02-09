@@ -37,7 +37,7 @@ jobs:
           npm install cross-env
           npm run start:test &
         env:
-          PORT: 8000
+          PORT: 5000
 
       - name: End to End Testing
         working-directory: client
@@ -47,7 +47,7 @@ jobs:
           yarn start &
           yarn test:e2e
         env:
-          REACT_APP_API_BASE_URL: http://localhost:8000
+          REACT_APP_API_BASE_URL: http://localhost:5000
 
   Deployment:
     needs: Lint_Build_Test
