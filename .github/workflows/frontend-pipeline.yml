@@ -55,8 +55,8 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Deploy to Netlify
-        - uses: jsmrcaga/action-netlify-deploy@v1.1.0
-          with:
-            NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-            NETLIFY_SITE_ID: ${{ secrets.7b9e85c2-f681-4e34-9d44-08312640a0e5 }}
-            NETLIFY_DEPLOY_TO_PROD: true
+        uses: jsmrcaga/action-netlify-deploy@v1.1.0
+        with:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_DEPLOY_TO_PROD: true
