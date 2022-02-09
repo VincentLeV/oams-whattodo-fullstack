@@ -32,7 +32,6 @@ jobs:
 
       - name: Run API In The Background
         working-directory: server
-        run: 
         run: |
           npm run install
           npm run install cross-env
