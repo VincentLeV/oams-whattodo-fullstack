@@ -12,6 +12,7 @@ jobs:
   Lint_Build_Test:
     runs-on: ubuntu-18.04
     environment: production
+
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -38,6 +39,7 @@ jobs:
           npm run start:test &
         env:
           PORT: 5000
+          TEST_MONGODB_URI: ${{ secrets.TEST_MONGODB_URI }}
 
       - name: End to End Testing
         working-directory: client
