@@ -54,6 +54,7 @@ jobs:
   Deployment:
     needs: Lint_Build_Test
     runs-on: ubuntu-18.04
+    environment: production
     if: github.event_name == 'push' && !contains(github.event.head_commit.message, '#skip')
     
     steps:
@@ -72,6 +73,8 @@ jobs:
         with:
           publish-dir: 'client/build'
           production-branch: main
+          deploy-message: "Deploy from GitHub Actions"
+          enable-commit-comment: true
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
