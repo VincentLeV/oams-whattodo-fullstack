@@ -13,7 +13,7 @@
 <br/>
 [Tech Stack](#tech-stack)
 <br/>
-[Run The Project Locally?](#run-the-project-locally)
+[Run The Project Locally](#run-the-project-locally)
 <br/>
 [UI Examples](#ui-examples)
 <br/>
