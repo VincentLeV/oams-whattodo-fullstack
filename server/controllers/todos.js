@@ -1,7 +1,7 @@
 const todoRouter = require( "express" ).Router()
 const Todo = require( "../models/todo" )
 
-todoRouter.get( "/api/todos", async (req, res) => {
+todoRouter.get( "/api/todos", async (_, res) => {
     try {
         const todos = await Todo.find({})
         res.json( todos )

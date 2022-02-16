@@ -16,7 +16,6 @@ mongoose
     .catch( err => logger.error("Error connecting to MongoDB:", err.message) )
 
 app.use( cors() )
-app.use( express.static("build") )
 app.use( express.json() )
 app.use( middleware.requestLogger )
 
@@ -28,7 +27,7 @@ if (process.env.NODE_ENV === "test") {
     app.use("/api/testing", testingRouter
 )}
 
-app.get( "/", (req, res) => {
+app.get( "/", (_, res) => {
     res.send( "Backend is running" )
 })
 

@@ -1,7 +1,7 @@
 const projectRouter = require( "express" ).Router()
 const Project = require( "../models/project" )
 
-projectRouter.get( "/api/projects", async (req, res) => {
+projectRouter.get( "/api/projects", async (_, res) => {
     try {
         const projects = await Project.find({})
         res.json( projects )
