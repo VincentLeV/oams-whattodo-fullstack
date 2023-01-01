@@ -25,7 +25,7 @@ describe("WhatToDo App", function() {
 
     describe("Todo", function() {
         it("can add a task", function() {
-            cy.get('button[aria-label*="Add Dial"]').click()
+            cy.get("button[aria-label*='Add Dial']").click()
             cy.wait(200)
             cy.get("#AddDial-actions").children().eq(0).click()
             cy.wait(200)
@@ -37,14 +37,14 @@ describe("WhatToDo App", function() {
         it("can edit a task", function() {
             cy.get(".edit-todo-btn").eq(1).click()
             cy.get(".edit-menu-item.edit").click()
-            cy.get('button[aria-controls*="priority-menu"]').click()
+            cy.get("button[aria-controls*='priority-menu']").click()
             cy
                 .get(".priority-menu-item")
                 .should("have.length", 3)
                 .eq(1)
                 .click()
-            cy.get('button[id*="edit-todo-btn"]').click({ multiple: true, force: true })
-            cy.get('svg[class*="priority-flag"]').should("have.css", "color").and("eq", "rgb(237, 108, 2)")
+            cy.get("button[id*='edit-todo-btn']").click({ multiple: true, force: true })
+            cy.get("svg[class*='priority-flag']").should("have.css", "color").and("eq", "rgb(237, 108, 2)")
 
             cy.get(".todo-description").should("have.length", 2).eq(0).should("contain", "Initial Task")
         })
@@ -58,7 +58,7 @@ describe("WhatToDo App", function() {
 
     describe("Project", function() {
         beforeEach(function() {
-            cy.get('div[aria-label*="Menu Tabs"]').children().should("have.length", 2).eq(1).click()
+            cy.get("div[aria-label*='Menu Tabs']").children().should("have.length", 2).eq(1).click()
         })
 
         it("contains initial project", function() {
@@ -66,7 +66,7 @@ describe("WhatToDo App", function() {
         })
 
         it("can create project", function() {
-            cy.get('button[aria-label*="Add Dial"]').click()
+            cy.get("button[aria-label*='Add Dial']").click()
             cy.wait(200)
             cy.get("#AddDial-actions").children().eq(1).click()
             cy.wait(200)

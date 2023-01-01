@@ -1,5 +1,5 @@
 import axios from "axios"
-const baseUrl = process.env.REACT_APP_API_BASE_URL || "https://oams-whattodo-mern-api.herokuapp.com"
+const baseUrl = process.env.REACT_APP_API_BASE_URL || "https://oams-whattodo-mern.onrender.com"
 
 const getTodos = async () => {
     const req = await axios.get(`${baseUrl}/api/todos`)
