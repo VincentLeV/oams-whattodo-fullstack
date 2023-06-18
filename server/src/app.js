@@ -5,8 +5,8 @@ const cors = require( "cors" )
 const middleware = require( "./utils/middleware" )
 const logger = require( "./utils/logger" )
 const mongoose = require( "mongoose" )
-const todoRouter = require( "../controllers/todos" )
-const projectRouter = require( "../controllers/projects" )
+const todoRouter = require( "./controllers/todos" )
+const projectRouter = require( "./controllers/projects" )
 
 logger.info( "Connecting to", config.MONGODB_URI )
 
